@@ -187,13 +187,13 @@ manually copying comment text into .txt files. This is documented as a
 limitation — the Reddit content is a snapshot and will not update automatically.
 
 ## AI Usage
-1. Claude generated the full ingest.py based on my planning.md chunking 
+1. Claude assisted in generating the ingest.py based on my planning.md chunking 
 strategy and document list. I reviewed the Reddit loader and identified that 
 it would fail with a 403 error, which led to the manual .txt workaround. I 
 also identified that the len(chunk) > 50 filter was needed to remove empty 
 chunks that the splitter was producing.
 
-2. Claude generated generate.py including the system prompt. I identified that 
+2. Claude assisted in generating generate.py, including the system prompt. I identified that 
 the grounding prompt was failing on the grad school question because retrieved 
 chunks were topically adjacent but factually wrong. I documented this as a 
 failure case rather than hiding it.
